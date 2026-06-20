@@ -16,7 +16,7 @@ enum KoreanConfig {
             appName: "BiangBiang Hangul",
             accentColorHex: "#003478",
             logoAssetName: "Logo",
-            buttonLogoAssetName: "Logo",
+            buttonLogoAssetName: "ico_button",
             githubRepo: "veeso/BiangBiang-Hangul",
             supportEmail: "info@veeso.dev",
             appStoreId: "",

@@ -1,0 +1,22 @@
+//
+//  BiangBiang_HangulApp.swift
+//  BiangBiang Hangul
+//
+//  Created by christian visintin on 31/10/25.
+//
+//  Config-only entry point: the BiangBiangUI library renders every screen
+//  and owns History, the rate prompt, TTS and the OCR pipeline. The app
+//  supplies only `KoreanConfig` + its romanizer.
+//
+
+import BiangBiangUI
+import SwiftUI
+
+@main
+struct BiangBiang_HangulApp: App {
+    var body: some Scene {
+        WindowGroup {
+            BiangBiangRootView(config: KoreanConfig.koreanConfig)
+        }
+    }
+}

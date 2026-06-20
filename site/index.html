@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en_US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    BiangBiang Hangul — Korean to Romanization Translator & OCR App for iOS and Android
+  </title>
+  <meta name="description"
+    content="Free Korean to Romanization translator app for iPhone and Android. Convert Hangul to Revised Romanization, scan Korean text from photos and the live camera with OCR, and translate Korean instantly." />
+  <meta name="keywords"
+    content="Korean to Romanization, Hangul to Romanization converter, Korean OCR, Korean translator app, scan Korean characters, Revised Romanization, learn Korean, Korean reader, Hangul translator, iOS Korean app, Android Korean app, romanize Hangul, read Korean" />
+  <meta name="author" content="Christian Visintin" />
+  <meta name="robots" content="index, follow" />
+  <meta name="application-name" content="BiangBiang Hangul" />
+  <meta name="apple-mobile-web-app-title" content="BiangBiang Hangul" />
+  <meta name="theme-color" content="#f5efe3" />
+  <link rel="canonical" href="https://biangbianghangul.app/" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="BiangBiang Hangul — Korean to Romanization Translator & OCR App" />
+  <meta property="og:description"
+    content="Convert Korean Hangul to Revised Romanization, scan text from photos, and translate Korean instantly on iPhone and Android." />
+  <meta property="og:image" content="https://biangbianghangul.app/assets/images/og_preview.jpeg" />
+  <meta property="og:image:alt" content="BiangBiang Hangul app preview showing Hangul to Romanization conversion" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="BiangBiang Hangul" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://biangbianghangul.app/" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BiangBiang Hangul — Korean to Romanization Translator & OCR App" />
+  <meta name="twitter:description"
+    content="Convert Korean Hangul to Revised Romanization, scan text from photos, and translate Korean instantly on iPhone and Android." />
+  <meta name="twitter:image" content="https://biangbianghangul.app/assets/images/og_preview.jpeg" />
+  <meta name="twitter:image:alt" content="BiangBiang Hangul app preview showing Hangul to Romanization conversion" />
+  <!-- Fonts: Sora (body, self-hosted in output.css) + Fraunces & Noto Serif KR (display) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..600&family=Noto+Serif+KR:wght@400;600;900&display=swap"
+    rel="stylesheet" />
+  <!-- tailwind -->
+  <link href="output.css" rel="stylesheet" />
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "BiangBiang Hangul",
+    "alternateName": "비앙비앙 한글",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "EducationalApplication",
+    "applicationSubCategory": "Language Learning",
+    "description": "Free Korean to Romanization translator app for iPhone and Android. Convert Hangul to Revised Romanization, scan Korean text from photos and the live camera with OCR, and translate Korean instantly.",
+    "url": "https://biangbianghangul.app/",
+    "image": "https://biangbianghangul.app/assets/images/og_preview.jpeg",
+    "inLanguage": ["en", "ko"],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Christian Visintin",
+      "email": "info@veeso.dev",
+      "url": "https://veeso.dev"
+    },
+    "downloadUrl": [
+      "https://play.google.com/store/apps/details?id=dev.veeso.biangbianghangul"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- ───────────────────────── Header ───────────────────────── -->
+  <header class="site-header sticky top-0 z-50 border-b border-[var(--line)] backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/logo.webp" alt="BiangBiang Hangul app logo" width="40" height="40"
+          class="h-10 w-10 rounded-xl" />
+        <span class="font-display text-lg font-semibold tracking-tight text-[var(--ink)]">BiangBiang Hangul</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="overflow-hidden">
+
+    <!-- ───────────────────────── Hero ───────────────────────── -->
+    <section class="relative mx-auto max-w-6xl px-6 pb-20 pt-14 sm:pt-10">
+      <!-- Giant ghost character watermark -->
+      <span aria-hidden="true"
+        class="font-hangul ghost-drift pointer-events-none absolute -right-8 -top-10 select-none text-[26rem] font-black leading-none text-[var(--brand)] opacity-[0.06] sm:text-[14rem] sm:-right-4">한</span>
+
+      <div class="relative grid grid-cols-2 items-center gap-12 sm:grid-cols-1 sm:gap-8">
+        <!-- Copy -->
+        <div>
+          <p class="eyebrow reveal reveal-d1">한글 · Romanization</p>
+          <h1 class="reveal reveal-d2 mt-5 font-display text-[4.2rem] font-black leading-[0.95] tracking-tight text-[var(--ink)] sm:text-[3rem]">
+            Read any<br />Korean.<br />
+            <span class="text-[var(--brand)]">Instantly.</span>
+          </h1>
+          <p class="reveal reveal-d3 mt-6 max-w-md text-lg leading-relaxed text-[var(--ink-soft)]">
+            The free Korean-to-Romanization translator and OCR app for
+            iPhone and Android. Type it, paste it, or point your camera at it — get the
+            reading in a tap.
+          </p>
+
+          <!-- Live conversion demo line -->
+          <div class="reveal reveal-d3 mt-7 inline-flex items-center gap-4 paper-card px-5 py-3">
+            <span class="font-hangul text-3xl font-semibold text-[var(--ink)]">안녕</span>
+            <span class="text-2xl text-[var(--brand)]" aria-hidden="true">→</span>
+            <span class="font-display text-2xl italic text-[var(--ink-soft)]">annyeong</span>
+          </div>
+
+          <!-- Download buttons -->
+          <div id="download" class="reveal reveal-d4 mt-9 flex flex-wrap items-center gap-3">
+            <a href="#" rel="noopener noreferrer">
+              <img src="assets/images/app_store.svg" alt="Download on the App Store" class="h-14" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=dev.veeso.biangbianghangul" target="_blank"
+              rel="noopener noreferrer">
+              <img src="assets/images/google_play.svg" alt="Get it on Google Play" class="h-14" />
+            </a>
+          </div>
+          <p class="reveal reveal-d5 mt-4 text-sm text-[var(--ink-soft)]">
+            Free · On-device · No account · Native iOS &amp; Android
+          </p>
+        </div>
+
+        <!-- Phone preview -->
+        <div class="reveal reveal-d3 flex justify-center">
+          <div class="device-frame w-[300px] max-w-full sm:w-[230px]">
+            <img src="assets/images/preview.webp" width="1320" height="2868"
+              alt="BiangBiang Hangul app showing Hangul converted to its romanization" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────── Marquee strip ───────────────────── -->
+    <div class="border-y border-[var(--line)] bg-[var(--paper-2)] py-4">
+      <div class="marquee items-center gap-10 text-xl">
+        <!-- duplicated once for a seamless 50% loop -->
+        <span class="flex shrink-0 items-center gap-10 px-5 text-[var(--ink-soft)]">
+          <span><span class="font-hangul text-[var(--ink)]">안녕</span> annyeong</span>
+          <span class="text-[var(--brand)]">·</span>
+          <span><span class="font-hangul text-[var(--ink)]">감사합니다</span> gamsahamnida</span>
+          <span class="text-[var(--brand)]">·</span>
+          <span><span class="font-hangul text-[var(--ink)]">사랑</span> sarang</span>
+          <span class="text-[var(--brand)]">·</span>
+          <span><span class="font-hangul text-[var(--ink)]">한국어</span> hangugeo</span>
+          <span class="text-[var(--brand)]">·</span>
+          <span><span class="font-hangul text-[var(--ink)]">친구</span> chingu</span>
+          <span class="text-[var(--brand)]">·</span>
+          <span><span class="font-hangul text-[var(--ink)]">한글</span> hangeul</span>
+          <span class="text-[var(--brand)]">·</span>
+        </span>
+        <span class="flex shrink-0 items-center gap-10 px-5 text-[var(--ink-soft)]" aria-hidden="true">
+          <span><span class="font-hangul text-[var(--ink)]">안녕</span> annyeong</span>
+          <span class="text-[var(--brand)]">·</span>
+          <span><span class="font-hangul text-[var(--ink)]">감사합니다</span> gamsahamnida</span>
+          <span class="text-[var(--brand)]">·</span>
+          <span><span class="font-hangul text-[var(--ink)]">사랑</span> sarang</span>
+          <span class="text-[var(--brand)]">·</span>
+          <span><span class="font-hangul text-[var(--ink)]">한국어</span> hangugeo</span>
+          <span class="text-[var(--brand)]">·</span>
+          <span><span class="font-hangul text-[var(--ink)]">친구</span> chingu</span>
+          <span class="text-[var(--brand)]">·</span>
+          <span><span class="font-hangul text-[var(--ink)]">한글</span> hangeul</span>
+          <span class="text-[var(--brand)]">·</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- ───────────────────── Features ───────────────────── -->
+    <section class="mx-auto max-w-6xl px-6 py-20">
+      <p class="eyebrow">What it does</p>
+      <h2 class="mt-4 max-w-2xl font-display text-[2.7rem] font-black leading-[1.05] text-[var(--ink)] sm:text-[1.9rem]">
+        Three ways to make Hangul readable.
+      </h2>
+
+      <div class="mt-12 grid grid-cols-3 gap-6 sm:grid-cols-1">
+        <div class="paper-card p-7">
+          <span class="seal h-12 w-12 text-2xl font-semibold">글</span>
+          <h3 class="mt-5 font-display text-2xl font-bold text-[var(--ink)]">Romanization</h3>
+          <p class="mt-3 leading-relaxed text-[var(--ink-soft)]">
+            Convert Hangul to its Revised Romanization (안녕 → annyeong) so you can read and
+            pronounce Korean out loud, even before you know the alphabet.
+          </p>
+        </div>
+        <div class="paper-card p-7">
+          <span class="seal h-12 w-12 text-2xl font-semibold">캠</span>
+          <h3 class="mt-5 font-display text-2xl font-bold text-[var(--ink)]">Live camera OCR</h3>
+          <p class="mt-3 leading-relaxed text-[var(--ink-soft)]">
+            Point your phone at a sign, menu, or book page. The camera reads Korean in
+            real time and overlays each word with its romanization. Works on gallery photos too.
+          </p>
+        </div>
+        <div class="paper-card p-7">
+          <span class="seal h-12 w-12 text-2xl font-semibold">역</span>
+          <h3 class="mt-5 font-display text-2xl font-bold text-[var(--ink)]">On-device translate</h3>
+          <p class="mt-3 leading-relaxed text-[var(--ink-soft)]">
+            Translate Korean into your language locally — no internet, no servers, no
+            account. Your text and images never leave the phone.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────── Screenshots showcase ───────────────────── -->
+    <section class="relative border-y border-[var(--line)] bg-[var(--paper-2)] py-20">
+      <span aria-hidden="true"
+        class="font-hangul pointer-events-none absolute -left-10 top-6 select-none text-[18rem] font-black leading-none text-[var(--brand)] opacity-[0.05] sm:hidden">글</span>
+      <div class="relative mx-auto max-w-6xl px-6">
+        <p class="eyebrow">See it in action</p>
+        <h2 class="mt-4 max-w-2xl font-display text-[2.7rem] font-black leading-[1.05] text-[var(--ink)] sm:text-[1.9rem]">
+          From characters to camera, in one tap.
+        </h2>
+        <div class="mt-12 grid grid-cols-2 items-start justify-items-center gap-10 sm:grid-cols-1">
+          <figure class="flex flex-col items-center">
+            <div class="device-frame w-[280px] max-w-full sm:w-[230px]">
+              <img src="assets/images/preview.webp" width="1320" height="2868"
+                alt="Hangul to romanization conversion screen" />
+            </div>
+            <figcaption class="mt-5 text-center text-[var(--ink-soft)]">Type or paste — instant romanization.</figcaption>
+          </figure>
+          <figure class="flex flex-col items-center">
+            <div class="device-frame w-[280px] max-w-full sm:w-[230px]">
+              <img src="assets/images/camera_ocr.webp" width="1320" height="2868"
+                alt="Live camera OCR scanning Korean text and showing its romanization" />
+            </div>
+            <figcaption class="mt-5 text-center text-[var(--ink-soft)]">Scan the world around you.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────── SEO content ───────────────────── -->
+    <section class="mx-auto max-w-3xl px-6 py-20 text-[var(--ink)]">
+      <h2 class="font-display text-[1.9rem] font-bold">Convert Korean Hangul to Revised Romanization in seconds</h2>
+      <p class="mb-4 mt-4 leading-relaxed text-[var(--ink-soft)]">
+        BiangBiang Hangul is a free, native mobile app that turns Korean script (한글, Hangul) into
+        its Revised Romanization. Paste or type any Korean text — a song lyric, a menu, a chat
+        message, a textbook paragraph — and get the romanized pronunciation instantly. Non-Korean
+        characters such as Latin letters, numbers, punctuation and emoji are preserved in place, so
+        mixed-language text stays readable.
+      </p>
+      <p class="mb-4 leading-relaxed text-[var(--ink-soft)]">
+        The app is built natively for both platforms: a SwiftUI version for iPhone and iPad, and a
+        Jetpack Compose version for Android. There is no shared cross-platform layer, which means
+        each app feels at home on its operating system and uses the OS-level translation engines for
+        speed and offline support.
+      </p>
+
+      <h2 class="mt-12 font-display text-[1.9rem] font-bold">Scan Korean text with OCR from photos and live camera</h2>
+      <p class="mb-4 mt-4 leading-relaxed text-[var(--ink-soft)]">
+        Point your phone at a Korean sign, restaurant menu, book page or product label and BiangBiang
+        Hangul will read the text for you. The OCR engine — Apple Vision on iOS and Google ML Kit
+        on Android — recognizes Korean in real time from the camera feed, and also works on photos
+        from your gallery. Each detected word is overlaid with its romanization, making it easy to
+        study, pronounce, or look up unfamiliar Hangul on the spot.
+      </p>
+
+      <h2 class="mt-12 font-display text-[1.9rem] font-bold">Translate Korean to your language</h2>
+      <p class="mb-4 mt-4 leading-relaxed text-[var(--ink-soft)]">
+        Beyond pronunciation, BiangBiang Hangul can translate Korean text into your
+        preferred language using on-device translation: the iOS Translation framework on iPhone and
+        Google ML Kit Translate on Android. Translations run locally once the language pack is
+        downloaded, so the app keeps working without an internet connection and without sending your
+        text to a third-party server.
+      </p>
+
+      <h2 class="mt-12 font-display text-[1.9rem] font-bold">Who is it for?</h2>
+      <ul class="mb-4 mt-4 list-disc list-inside space-y-2 text-[var(--ink-soft)] marker:text-[var(--brand)]">
+        <li>Korean learners who need quick romanized readings while studying.</li>
+        <li>K-pop and K-drama fans who want to read along with lyrics and subtitles.</li>
+        <li>Travelers in Korea who need to read signs, menus, and transit boards.</li>
+        <li>Teachers and students who work with Korean textbooks, flashcards, or handwritten notes.</li>
+        <li>Anyone who receives Korean messages, documents or photos and wants to understand them.</li>
+      </ul>
+
+      <h2 class="mt-12 font-display text-[1.9rem] font-bold">Key features</h2>
+      <ul class="mb-4 mt-4 list-disc list-inside space-y-2 text-[var(--ink-soft)] marker:text-[var(--brand)]">
+        <li>Hangul to Revised Romanization conversion (e.g. annyeong for 안녕).</li>
+        <li>OCR from photos and from the live camera feed.</li>
+        <li>On-device translation of Korean into many target languages.</li>
+        <li>Non-Korean characters preserved in place for mixed-language text.</li>
+        <li>Privacy-friendly: text and images stay on your device.</li>
+        <li>Free to download on the App Store and Google Play.</li>
+        <li>Native iOS (SwiftUI) and Android (Jetpack Compose) apps.</li>
+      </ul>
+
+      <h2 class="mt-12 font-display text-[1.9rem] font-bold">Why it is called BiangBiang Hangul</h2>
+      <p class="mb-4 mt-4 leading-relaxed text-[var(--ink-soft)]">
+        BiangBiang is a small family of apps that make different writing systems easy to read at a
+        glance. This one is dedicated to Korean: it takes Hangul (한글) and instantly shows you how to
+        pronounce it, so reading Korean stops feeling like a puzzle and starts feeling natural.
+      </p>
+
+      <!-- Final CTA -->
+      <div class="mt-12 flex flex-wrap items-center gap-3">
+        <a href="#" rel="noopener noreferrer">
+          <img src="assets/images/app_store.svg" alt="Download on the App Store" class="h-14" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=dev.veeso.biangbianghangul" target="_blank"
+          rel="noopener noreferrer">
+          <img src="assets/images/google_play.svg" alt="Get it on Google Play" class="h-14" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ───────────────────────── Footer ───────────────────────── -->
+  <footer class="border-t border-[var(--line)] bg-[var(--paper-2)] px-6 pb-8 pt-16">
+    <div class="mx-auto flex max-w-6xl flex-col gap-10">
+      <div class="flex items-start justify-between gap-8 sm:flex-col">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/logo.webp" alt="BiangBiang Hangul app logo" width="40" height="40"
+            class="h-10 w-10 rounded-xl" />
+          <span class="font-display text-lg font-semibold text-[var(--ink)]">BiangBiang Hangul</span>
+        </div>
+        <!-- Links -->
+        <div class="flex flex-col gap-3">
+          <a href="index.html" class="text-[var(--ink-soft)] hover:text-[var(--brand)]">Home</a>
+          <a href="privacy.html" class="text-[var(--ink-soft)] hover:text-[var(--brand)]">Privacy Policy</a>
+          <a href="https://github.com/veeso/BiangBiang-Hangul" class="text-[var(--ink-soft)] hover:text-[var(--brand)]">Github</a>
+        </div>
+        <!-- Legal -->
+        <div class="flex flex-col gap-3 text-[var(--ink-soft)]">
+          <span>Christian Visintin</span>
+          <a href="mailto:info@veeso.dev" class="hover:text-[var(--brand)]">info@veeso.dev</a>
+          <span>Via Marangoni 33, 33100, Udine, Italy</span>
+          <span>IT03104140300</span>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-1 border-t border-[var(--line)] pt-6 text-center">
+        <span class="text-xs text-[var(--ink-soft)]">Copyright © <span id="copyright-year">2026</span> Christian Visintin</span>
+        <span class="text-xs text-[var(--ink-soft)]">Google Play and the Google Play logo are trademarks of Google LLC.</span>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    // Set current year in copyright
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

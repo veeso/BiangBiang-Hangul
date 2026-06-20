@@ -1,0 +1,15 @@
+{
+  "originHash" : "4792d032329535d5fe5f5b3c7323ec323846ff8401b3e345202de7cf34bad707",
+  "pins" : [
+    {
+      "identity" : "biangbiangui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/veeso/BiangBiangUI",
+      "state" : {
+        "revision" : "7f5ac0ebeb721b96260b6e1658b195adb7ea13c1",
+        "version" : "0.3.3"
+      }
+    }
+  ],
+  "version" : 3
+}

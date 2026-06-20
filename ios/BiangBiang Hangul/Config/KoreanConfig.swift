@@ -19,7 +19,7 @@ enum KoreanConfig {
             buttonLogoAssetName: "ico_button",
             githubRepo: "veeso/BiangBiang-Hangul",
             supportEmail: "info@veeso.dev",
-            appStoreId: "",
+            appStoreId: "6782341879",
             playStoreId: "dev.veeso.biangbianghangul"
         ),
         languages: [

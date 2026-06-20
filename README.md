@@ -21,6 +21,7 @@ I developed this app to help myself and others learn Korean more effectively by 
 
 You can download 한글 BiangBiang Hangul from the App Store and from the Google Play Store.
 
+[![App Store](./assets/app_store_badge.png)](https://apps.apple.com/app/id6782341879)
 [![Google Play](./assets/google_play_badge.png)](https://play.google.com/store/apps/details?id=dev.veeso.biangbianghangul)
 
 > The iOS version is not yet published on the App Store.

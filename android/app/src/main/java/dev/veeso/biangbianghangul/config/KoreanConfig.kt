@@ -41,7 +41,7 @@ fun koreanConfig(context: Context): BiangBiangConfig {
                         id = "korean",
                         displayName = "Korean",
                         transliterator = romanizer,
-                        ttsLanguageCode = "ko-KR",
+                        ttsLanguageCode = "ko",
                         translatable = true,
                     ),
                 ),
